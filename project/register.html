@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>ONLINE VOTING SYSTEM- REGISTRATION</title>
+    <style media="screen">
+      body{text-align:center; font-size:25px; background-color:#D6A2E8;}
+      #head{background-color:black; color:white;}
+      input{padding:10px; border-radius:5px; border: 1px solid black; margin-bottom:10px;}
+      #r1{padding:10px; border-radius: 5px; border: 1px solid black; width: 25%;}
+      #v1{padding: 5px; border-radius: 5px; width: 20%; border: 1px solid black; }
+     a{color:blue;}
+
+    </style>
+
+  </head>
+  <body>
+    <div id="head">
+
+    <h1>ONLINE VOTING SYSTEM </h1>
+  </div>
+    <hr>
+    <br>
+    <h3>REGISTRATION</h3>
+    <form action="C:/wamp/www/api/register.php" method="POST" enctype="multipart/form-data">
+
+    <input type="text" name="name "  placeholder="Name ">
+     <input type="number" name="mobile"  placeholder="Mobile No.">
+<br>
+     <input type="password" name="password"  placeholder="password">
+<input type="password" name="cpassword"  placeholder="Confirm Password">
+<br>
+<input type="text" name="address" placeholder="Address" id="r1">
+<br>
+
+<div  >
+
+<label>Upload image :</label>
+<input type="file" name="photo" placeholder="">
+
+</div>
+<br>
+<label>select role:</label>
+<select  name="role" id="v1">
+  <option value="1">Voter</option>
+  <option value="2">Group</option>
+</select>
+<br>
+<button type="submit" id="v1"style="background-color:green; cursor:pointer; >Register</button>
+<br>
+Already here? <a href="http://localhost/project/home.html#">Login here</a>
+    </form>
+
+  </body>
+</html>

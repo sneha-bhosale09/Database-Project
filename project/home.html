@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ONLINE VOTING SYSTEM</title>
+  <style media="screen">
+    body {
+      background-image: url(https://wallpaperaccess.com/full/4475127.jpg);
+      text-align: right;
+      font-size: 25px;
+      color: white;
+      background-repeat: no-repeat;
+      background-color: #2C3A47;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+      padding-right: 120px;
+    }
+
+    a {
+      color: yellow;
+    }
+
+    .b1 {
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: green;
+      color: black;
+    }
+
+    .div1 {
+      padding-right: 100px;
+    }
+
+    a:hover {
+      color: violet;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid black;
+      margin-bottom: 5px;
+    }
+
+    #dropbox {
+      padding: 10px;
+      border-radius: 3px;
+      background-color: powderblue;
+      font-size: 15px;
+      width: 20%;
+      margin-right: -100px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 text-align="center">ONLINE VOTING SYSTEM</h2>
+  <hr>
+  <br>
+  <h3>LOGIN</h3>
+  <br>
+  <form action="C:\wamp\www\api\login.php" method="POST">
+    <label>Enter Mobile Number:</label>
+    <input type="number" name="number" value="number" placeholder="Enter Mobile No">
+    <br>
+    <label>Password:</label>
+    <input type="password" name="password" placeholder="Enter Password">
+    <br>
+    <div class="div1">
+
+      <select name="role" id="dropbox">
+        <div style="bgcolor:white;  ">
+          <option value="1">Voter</option>
+          <option value="2">Group</option>
+        </div>
+
+      </select>
+      <br><br><br>
+      <button type="submit" class="b1" name="login">LOGIN</button>
+      <br>
+    </div>
+    <br>
+    <br>
+    <div class="div1">
+
+      New user??
+      <br><a href="http://localhost/project/register.html#home.html">Register here</a>
+    </div>
+  </form>
+</body>
+
+</html>
